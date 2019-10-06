@@ -15,14 +15,22 @@ def id_generator
 end
 
 def my_hash_creator(key, value)
+
     return my_hash_creator = {key => value}
-end
+
+   return my_hash_creator={10 => 'john'}
+ end
+
 
 def read_from_hash(hash, key)
     return hash[key]
 end
 
 def update_counting_hash(hash, key)
-    return hash[key]+=1
-    
+    if hash.include?(key)
+      hash[key]+=1
+    else
+       hash[key]=1
+     end
+   return hash
 end
