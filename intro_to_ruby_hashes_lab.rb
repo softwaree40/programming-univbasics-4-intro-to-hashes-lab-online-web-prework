@@ -19,6 +19,7 @@ def my_hash_creator(key, value)
     return my_hash_creator = {key => value}
 
    return my_hash_creator={10 => 'john'}
+ end
 
 
 def read_from_hash(hash, key)
